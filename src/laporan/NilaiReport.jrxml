@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6574ae37-994d-4101-8610-ac479e92fd2c">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="57"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dbmahasiswa1" uuid="5e458904-de2c-43d4-874c-eed766b06db3">
+		<queryString language="SQL">
+			<![CDATA[select * from nilai]]>
+		</queryString>
+		<field name="nim" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="matkul" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nil1" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nil2" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="rata" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[select * from nilai;]]>
+	</queryString>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="matkul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nil1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nil2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rata" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="133" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e1ca8b0a-6a5d-4b34-b54a-0b425303a7fe" x="311" y="15" width="189" height="38"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Mahasiswa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d53dd6fe-17d4-4746-b120-872f674f45e3" x="311" y="53" width="189" height="30"/>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nilai Semester Ganjil]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="acb6188d-2e3d-4b56-9fae-3563c584ee0f" x="80" y="5" width="118" height="128"/>
+				<imageExpression><![CDATA["F:\\KAMPUS\\05TPLP001\\Pemrogranan II\\pertemuan 7\\LatDatabase\\src\\laporan\\myphoto.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="d4cdcb99-8ebd-4e5e-970a-33fa3002a8bf" x="198" y="24" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9457a088-e0dd-4733-bb3c-bfe44fa6a884" x="298" y="24" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="67e67794-86ad-4e04-963e-82a33954d97e" x="398" y="24" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[matkul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2a90df0-3dde-49fb-b88b-2c883fbae904" x="498" y="24" width="43" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nilai 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1b49d142-dcbe-49f3-88e1-46b035f849d3" x="541" y="24" width="33" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nilai 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4ca5d09f-b80a-43ce-8533-19ffe49a79fe" x="574" y="24" width="45" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Rata-rata]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="821b97b1-0dd4-4a16-8980-bae21283d357" x="198" y="45" width="421" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement uuid="5df09f13-2e50-4d7e-aae1-bb3c794b7092" x="198" y="2" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b688c805-ccfd-4223-b3bd-2ad81f7600b9" x="298" y="2" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8f015dbc-7f0f-46f4-8554-a2dbfa531215" x="398" y="2" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{matkul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="34f619c9-a761-4842-916a-bb7d4de668bf" x="498" y="2" width="43" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nil1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ef69c735-5e86-4117-86e1-c977d564d9cf" x="541" y="2" width="33" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nil2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9c37f893-8b8d-4237-afbe-4a8a5853e88f" x="574" y="2" width="45" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{rata}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="edf4fcf3-7e11-416a-b66a-00ed78a292c2" x="198" y="26" width="421" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
